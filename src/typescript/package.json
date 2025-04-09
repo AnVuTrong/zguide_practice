@@ -1,0 +1,24 @@
+{
+  "name": "zguide-typescript-examples",
+  "version": "1.0.0",
+  "description": "ZeroMQ Guide examples rewritten in TypeScript",
+  "scripts": {
+    "build": "tsc",
+    "reqrep:server": "node dist/1_req_rep/server.js",
+    "reqrep:client": "node dist/1_req_rep/client.js",
+    "pubsub:server": "node dist/2_pub_sub/weather_server.js",
+    "pubsub:client": "node dist/2_pub_sub/weather_client.js",
+    "pushpull:ventilator": "node dist/3_push_pull/ventilator.js",
+    "pushpull:worker": "node dist/3_push_pull/worker.js",
+    "pushpull:sink": "node dist/3_push_pull/sink.js"
+  },
+  "dependencies": {
+    "zeromq": "^6.0.0-beta.19" 
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7", 
+    "typescript": "^5.4.5" 
+  },
+  "author": "",
+  "license": "ISC"
+} 
