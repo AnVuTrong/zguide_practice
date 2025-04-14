@@ -4,19 +4,20 @@
   "description": "ZeroMQ Guide examples rewritten in TypeScript",
   "scripts": {
     "build": "tsc",
-    "reqrep:server": "node dist/1_req_rep/server.js",
-    "reqrep:client": "node dist/1_req_rep/client.js",
-    "pubsub:server": "node dist/2_pub_sub/weather_server.js",
-    "pubsub:client": "node dist/2_pub_sub/weather_client.js",
-    "pushpull:ventilator": "node dist/3_push_pull/ventilator.js",
-    "pushpull:worker": "node dist/3_push_pull/worker.js",
-    "pushpull:sink": "node dist/3_push_pull/sink.js"
+    "reqrep:server": "ts-node 1_req_rep/server.ts",
+    "reqrep:client": "ts-node 1_req_rep/client.ts",
+    "pubsub:server": "ts-node 2_pub_sub/weather_server.ts",
+    "pubsub:client": "ts-node 2_pub_sub/weather_client.ts",
+    "pushpull:ventilator": "ts-node 3_push_pull/ventilator.ts",
+    "pushpull:worker": "ts-node 3_push_pull/worker.ts",
+    "pushpull:sink": "ts-node 3_push_pull/sink.ts"
   },
   "dependencies": {
     "zeromq": "^6.0.0-beta.19" 
   },
   "devDependencies": {
     "@types/node": "^20.12.7", 
+    "ts-node": "^10.9.2",
     "typescript": "^5.4.5" 
   },
   "author": "",

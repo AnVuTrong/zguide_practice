@@ -7,8 +7,7 @@ async function runClient() {
   sock.connect("tcp://localhost:5555");
   console.log("Client connected to tcp://localhost:5555");
 
-  // Do 10 requests
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 1000000; i++) {
     console.log(`Sending request ${i} ...`);
     await sock.send("Hello");
 
