@@ -29,6 +29,7 @@ def main():
     nbr = 0
     while True:
         msg = subscriber.recv()
+        print(f"Received message: {msg}")
         if msg == b"END":
             break
         nbr += 1

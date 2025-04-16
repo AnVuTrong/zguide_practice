@@ -71,3 +71,10 @@ ch2_sub_sync:
 
 ch2_pub_sync:
 	python src/python/chapter_2/8_node_cordination/pub_synchronization.py
+
+# Chapter 2: Pub-Sub Envelope
+ch2_psenv_pub:
+	python src/python/chapter_2/9_pub_sub_envelope/psenvpub.py
+
+ch2_psenv_sub:
+	python src/python/chapter_2/9_pub_sub_envelope/psenvsub.py
